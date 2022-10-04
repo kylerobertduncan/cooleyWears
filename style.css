@@ -1,0 +1,56 @@
+@import "setup.css";
+
+body {
+  background-color: midnightblue;
+}
+
+.wrapper {
+  background-color: oldlace;
+  border-radius: 10px;
+  height: 667px;
+  margin: 0 auto;
+  width: 375px;
+}
+
+header {
+  padding: 5px;
+}
+
+main {
+  min-height: 375px;
+  position: relative;
+}
+
+main .layer {
+  position: absolute;
+  min-height: 375px;
+  width: 100%;
+}
+
+main .background {
+  background-image: url(assets/backgrounds/Test_field_1.png);
+  background-size: contain;
+}
+
+main .character {
+  background-image: url(assets/bodies/Test_slime.png);
+  background-size: contain;
+}
+
+main .clothing {
+  background-image: url(assets/outfits/Test_Kyle.png);
+  background-size: contain;
+}
+
+aside div {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 0;
+  width: 100%;
+}
+
+aside button {
+  margin: 0 10px;
+  padding: 10px 0;
+  width: 100%;
+}
