@@ -47,6 +47,6 @@ buttons.forEach(b => {
   const { path, type } = option[0];
   const layer = document.querySelector(`.${type}`);
   b.addEventListener("click", () => {
-    layer.style.backgroundImage = `url(assets/${path})`;
+    layer.src = `./assets/${path}`;
   })
 });

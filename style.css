@@ -1,45 +1,36 @@
 @import "setup.css";
 
 body {
-  background-color: midnightblue;
-}
-
-.wrapper {
   background-color: oldlace;
-  border-radius: 10px;
-  height: 667px;
-  margin: 0 auto;
-  width: 375px;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  height: 100vh;
+  width: 100vw;
 }
 
-header {
-  padding: 5px;
+h1 {
+  bottom: 0;
+  padding: 20px;
+  position: absolute;
+  right: 0;
+  z-index: 50;
 }
 
 main {
+  height: 100vw;
   min-height: 375px;
   position: relative;
 }
 
-main .layer {
+main img {
+  max-height: 100%;
   position: absolute;
-  min-height: 375px;
-  width: 100%;
+  max-width: 100%;
 }
 
-main .background {
-  background-image: url(assets/backgrounds/Test_field_1.png);
-  background-size: contain;
-}
-
-main .character {
-  background-image: url(assets/bodies/Test_slime.png);
-  background-size: contain;
-}
-
-main .clothing {
-  background-image: url(assets/outfits/Test_Kyle.png);
-  background-size: contain;
+aside {
+  flex-grow: 1;
 }
 
 aside div {
@@ -53,4 +44,14 @@ aside button {
   margin: 0 10px;
   padding: 10px 0;
   width: 100%;
+}
+
+@media (min-width: 1149px) {
+  body {
+    flex-direction: row;
+  }
+  main {
+    height: auto;
+    width: 100vh;
+  }
 }
