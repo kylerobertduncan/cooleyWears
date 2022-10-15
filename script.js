@@ -1,52 +1,33 @@
-const options = [
-  {
-    id: "background1",
-    type: "background",
-    path: "backgrounds/Test_field_1.png"
-  },
-  {
-    id: "background2",
-    type: "background",
-    path: "backgrounds/Test_field_2.png"
-  },
-  {
-    id: "character1",
-    type: "character",
-    path: "bodies/Test_Imp.png"
-  },
-  {
-    id: "character2",
-    type: "character",
-    path: "bodies/Test_Mouse.png"
-  },
-  {
-    id: "character3",
-    type: "character",
-    path: "bodies/Test_slime.png"
-  },
-  {
-    id: "clothing1",
-    type: "clothing",
-    path: "outfits/Test_Dress.png"
-  },
-  {
-    id: "clothing2",
-    type: "clothing",
-    path: "outfits/Test_Kyle.png"
-  },
-  {
-    id: "clothing3",
-    type: "clothing",
-    path: "outfits/Test_Travelling.png"
-  }
-]
+import { images } from "./images.js";
 
-const buttons = document.querySelectorAll("button");
-buttons.forEach(b => {
-  const option = options.filter(o => o.id === b.id);
-  const { path, type } = option[0];
+function changeLayer(id) {
+  const info = images.filter(i => i.id == id);
+  const {altText, path, type } = info[0];
   const layer = document.querySelector(`.${type}`);
-  b.addEventListener("click", () => {
-    layer.src = `./assets/${path}`;
+  layer.alt = altText;
+  layer.src = `./assets/${path}`;
+}
+
+function changeTab(layer) {
+  const options = images.filter(i => i.type == layer);
+
+  const ul = document.querySelector(".layerChoices");
+  ul.innerHTML = "";
+
+  options.forEach(o => {
+    const {altText, id, path} = o;
+    const li = document.createElement("li");
+    const button = document.createElement("button");
+    button.id = id;
+    button.innerHTML = `
+      <img alt=${altText} src="./assets/${path}"/>
+    `;
+    li.appendChild(button);
+    ul.appendChild(li);
+    button.addEventListener("click", () => changeLayer(id));
   })
-});
+}
+
+const tabs = document.querySelector(".layerTabs");
+tabs.addEventListener("input", e => changeTab(e.target.id));
+changeTab("backgrounds");
