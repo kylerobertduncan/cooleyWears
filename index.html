@@ -12,38 +12,30 @@
   <body>
     
     <main>
-      <h1>cooley wears...</h1>
-      <img src="./assets/backgrounds/Test_field_1.png" alt="" class="background"></img>
-      <img src="./assets/bodies/Test_slime.png" alt="" class="character"></img>
-      <img src="./assets/outfits/Test_Kyle.png" alt="" class="clothing"></img>
+      <h1>Cooley wears...</h1>
+      <img src="./assets/backgrounds/Test_field_1.png" alt="" class="backgrounds"></img>
+      <img src="" alt="" class="bodies"></img>
+      <img src="" alt="" class="outfits"></img>
     </main>
     
     <aside>
       
-      <section class="layerTabs">
-        <button class="tab">Backgrounds</button>
-        <button class="tab">Bodies</button>
-        <button class="tab">Outfits</button>
-      </section>
+      <form class="layerTabs">
+        
+        <input checked id="backgrounds" name="layer" type="radio">
+        <label class="tab" for="backgrounds">Backgrounds</label>
+        
+        <input id="bodies" name="layer" type="radio">
+        <label class="tab" for="bodies">Bodies</label>
+        
+        <input id="outfits" name="layer" type="radio">
+        <label class="tab" for="outfits">Outfits</label>
+        
+      </form>
 
-      <section class="layerChoices">
+      <ul class="layerChoices">
 
-      </section>
-
-      <!-- <div class="background">
-        <button id="background1">Hills</button>
-        <button id="background2">Path</button>
-      </div>
-      <div class="character">
-        <button id="character1">Imp</button>
-        <button id="character2">Mouse</button>
-        <button id="character3">Slime</button>
-      </div>
-      <div class="clothing">
-        <button id="clothing1">Dress</button>
-        <button id="clothing2">Hi Kyle</button>
-        <button id="clothing3">Travelling</button>
-      </div> -->
+      </ul>
 
     </aside>
     

@@ -2,49 +2,49 @@ export const images = [
   {
     altText: "Hills",
     id: "background1",
-    type: "background",
-    path: "backgrounds/Test_field_1.png"
+    path: "backgrounds/Test_field_1.png",
+    type: "backgrounds"
   },
   {
     altText: "Path",
     id: "background2",
-    type: "background",
-    path: "backgrounds/Test_field_2.png"
+    path: "backgrounds/Test_field_2.png",
+    type: "backgrounds"
   },
   {
     altText: "Imp",
-    id: "character1",
-    type: "character",
-    path: "bodies/Test_Imp.png"
+    id: "body1",
+    path: "bodies/Test_Imp.png",
+    type: "bodies"
   },
   {
     altText: "Mouse",
-    id: "character2",
-    type: "character",
-    path: "bodies/Test_Mouse.png"
+    id: "body2",
+    path: "bodies/Test_Mouse.png",
+    type: "bodies"
   },
   {
     altText: "Slime",
-    id: "character3",
-    type: "character",
-    path: "bodies/Test_slime.png"
+    id: "body3",
+    path: "bodies/Test_slime.png",
+    type: "bodies"
   },
   {
     altText: "Dress",
-    id: "clothing1",
-    type: "clothing",
-    path: "outfits/Test_Dress.png"
+    id: "outfit1",
+    path: "outfits/Test_Dress.png",
+    type: "outfits"
   },
   {
     altText: "Hi Kyle",
-    id: "clothing2",
-    type: "clothing",
-    path: "outfits/Test_Kyle.png"
+    id: "outfit2",
+    path: "outfits/Test_Kyle.png",
+    type: "outfits"
   },
   {
     altText: "Traveller",
-    id: "clothing3",
-    type: "clothing",
-    path: "outfits/Test_Travelling.png"
+    id: "outfit3",
+    path: "outfits/Test_Travelling.png",
+    type: "outfits"
   }
 ];
