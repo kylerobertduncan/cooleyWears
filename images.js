@@ -46,5 +46,29 @@ export const images = [
     id: "outfit3",
     path: "outfits/Test_Travelling.png",
     type: "outfits"
+  },
+  {
+    altText: "Bat",
+    id: "outfit4",
+    path: "outfits/Bat.png",
+    type: "outfits"
+  },
+  {
+    altText: "Gargloyle",
+    id: "outfit5",
+    path: "outfits/Gargoyle.png",
+    type: "outfits"
+  },
+  {
+    altText: "Scallop",
+    id: "outfit6",
+    path: "outfits/Scallop.png",
+    type: "outfits"
+  },
+  {
+    altText: "Scurry",
+    id: "outfit7",
+    path: "outfits/Scurry.png",
+    type: "outfits"
   }
 ];
